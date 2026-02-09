@@ -1,10 +1,10 @@
 # Sarcasm Detection (NLP Project)
 
-This repository explores several ML/DL approaches for sarcasm detection on the **Sarcasm Headlines Dataset** (Onion + HuffPost style headlines). We implemented and compared models ranging from classical baselines to modern transformers.
+This repository explores several ML/DL approaches for sarcasm detection on the **Sarcasm Headlines Dataset** (Onion/HuffPost headlines). We implemented and compared models ranging from classical baselines to transformer-based models.
 
 ## Notebooks
 - `LogReg+SVM.ipynb`
-- `LSTM.ipynb` (my contribution: baseline vs GloVe-initialized LSTM + error analysis + word-importance demo)
+- `LSTM.ipynb` (my contribution)
 - `BiLSTM.ipynb`
 - `BERT_baseline.ipynb`
 - `BERT_improved.ipynb`
@@ -31,4 +31,15 @@ Open any notebook and run cells top-to-bottom.
 Notes for `LSTM.ipynb`:
 - Uses PyTorch, NumPy/Pandas, scikit-learn, matplotlib/seaborn
 - Downloads **GloVe 6B 100d** on first run (large download) and reuses it on later runs
-- Recommended: create a Python venv and install dependencies from `requirements.txt`
+- If you want a clean setup, create a Python venv and install dependencies from `requirements.txt`
+
+### Install
+Create a venv, then:
+
+```bash
+pip install -r requirements.txt
+```
+
+PyTorch install depends on your machine (CPU vs GPU). Install it from the official selector:
+https://pytorch.org/get-started/locally/
+
