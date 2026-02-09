@@ -8,3 +8,7 @@ __pycache__/
 
 # OS junk
 .DS_Store
+
+# Other
+glove*.txt
+glove*.zip
